@@ -210,9 +210,10 @@ int main() {
 
     for (int i=0; i<21; i++) {
         playerMove(1);
-        drawBoard;
+        drawBoard();
         winner = checkForWin(prevX, prevY, 1);
         if (winner) {
+
             cout << "\nYou win!" << endl;
             break;
         }
